@@ -28,16 +28,7 @@ public class Division : IOperation
 {
     public double perform(double a, params double[] operands)
     {
-
-        try
-        {
-            return a / operands[0];
-        }
-        catch (Exception e)
-        {
-            System.Console.WriteLine(e);
-            return 0;
-        }
+        return a / operands[0];
     }
 }
 public class SquareRoot : IOperation
